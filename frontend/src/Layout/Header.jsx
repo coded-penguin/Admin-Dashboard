@@ -1,5 +1,6 @@
 import React from 'react'
-import { Menu, Search, Filter, Plus, Sun, Bell, Settings, ChevronDown } from 'lucide-react'
+import { Menu, Search, Filter, Plus, Bell, Settings, ChevronDown } from 'lucide-react'
+import ThemeToggler from '../components/ThemeToggler'
 
 function Header({ onToggleSidebar }) {
 
@@ -58,11 +59,7 @@ function Header({ onToggleSidebar }) {
           </button>
 
           {/* Toggle */}
-          <button className='p-2.5 rounded-xl text-slate-600 dark:text-slate-300
-            hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors'
-          >
-            <Sun className='w-5 h-5' />
-          </button>
+          <ThemeToggler />
 
           {/* Notifications */}
           <button className='relative p-2.5 rounded-xl text-slate-600 dark:text-slate-300
